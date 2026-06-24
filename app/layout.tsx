@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata = {
   title: "Thomas Cornell | IT Portfolio",
   description:
-    "IT portfolio focused on IAM, Active Directory, virtualization, Docker, and automation.",
+    "IT portfolio focused on enterprise support, infrastructure, systems administration, automation, and technical documentation.",
 };
 
 export default function RootLayout({
@@ -24,6 +24,7 @@ export default function RootLayout({
           <div className="nav-links">
             <Link href="/">Home</Link>
             <Link href="/projects">Projects</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/resume">Resume</Link>
           </div>
         </nav>

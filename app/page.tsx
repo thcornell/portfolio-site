@@ -9,53 +9,44 @@ export default function Home() {
         <h1 className="hero-title">Thomas Cornell</h1>
 
         <p className="hero-subtitle">
-          IT Support Engineer focused on Identity & Access Management,
-          Active Directory, Windows infrastructure, virtualization, Docker,
-          and automation.
+          I’m an IT professional with enterprise support experience, building a
+          hands-on portfolio around infrastructure, systems administration,
+          automation, and technical documentation.
         </p>
-      </section>
 
-      <section className="section">
-        <h2>System Overview</h2>
+        <p className="hero-subtitle">
+          This site documents the systems I’m learning, building, and
+          troubleshooting — from Active Directory and virtual machines to Docker,
+          scripting, networking, and future cloud projects.
+        </p>
 
-        <div className="grid">
-          <div className="card">
-            <span className="status-pill">Active</span>
-            <h3>Identity</h3>
-            <p>Active Directory, Okta, SailPoint, and user lifecycle support.</p>
-          </div>
+        <div className="button-row">
+          <Link href="/projects" className="button">
+            View Projects
+          </Link>
 
-          <div className="card">
-            <span className="status-pill">Active</span>
-            <h3>Infrastructure</h3>
-            <p>Windows Server, Windows 11 clients, DNS, and virtual machines.</p>
-          </div>
+          <Link href="/resume" className="button-secondary">
+            View Resume
+          </Link>
 
-          <div className="card">
-            <span className="status-pill status-muted">Building</span>
-            <h3>Automation</h3>
-            <p>PowerShell, repeatable workflows, documentation, and scripts.</p>
-          </div>
-
-          <div className="card">
-            <span className="status-pill status-muted">Planned</span>
-            <h3>Containers</h3>
-            <p>Docker, Docker Compose, self-hosted tools, and monitoring.</p>
-          </div>
+          <Link href="/blog" className="button-secondary">
+            Read Blog
+          </Link>
         </div>
       </section>
 
       <section className="section">
-        <h2>Featured Work</h2>
+        <h2>Featured Project</h2>
 
         <div className="card">
           <span className="status-pill">In Progress</span>
+
           <h3>Active Directory Home Lab</h3>
 
           <p>
-            A Windows Server 2022 lab environment for practicing domain
-            services, DNS, user/group management, Group Policy concepts, and
-            client domain joins.
+            A Windows Server 2022 lab used to practice domain services, DNS,
+            user and group management, Group Policy concepts, and Windows client
+            administration.
           </p>
 
           <Link href="/projects/active-directory" className="link-accent">
@@ -65,14 +56,33 @@ export default function Home() {
       </section>
 
       <section className="section">
-        <h2>Current Build Status</h2>
+        <h2>Latest Blog Post</h2>
+
+        <div className="card">
+          <span className="status-pill">New</span>
+
+          <h3>Building This Portfolio Site</h3>
+
+          <p>
+            Notes from creating this site with Next.js, GitHub, Vercel, and a
+            simple development workflow.
+          </p>
+
+          <Link href="/blog/building-this-site" className="link-accent">
+            Read post →
+          </Link>
+        </div>
+      </section>
+
+      <section className="section">
+        <h2>Currently Building</h2>
 
         <div className="card">
           <ul>
-            <li>Next.js portfolio deployed through GitHub and Vercel</li>
-            <li>Projects section created</li>
-            <li>Active Directory project documentation started</li>
-            <li>Resume section scaffolded</li>
+            <li>Active Directory documentation</li>
+            <li>Docker environment planning</li>
+            <li>PowerShell automation examples</li>
+            <li>Networking and troubleshooting notes</li>
           </ul>
         </div>
       </section>
