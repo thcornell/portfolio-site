@@ -2,24 +2,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main style={{ fontFamily: "Arial" }}>
-      {/* NAVBAR */}
-      <nav style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "20px 40px",
-        borderBottom: "1px solid #ddd"
-      }}>
-        <div style={{ fontWeight: "bold" }}>
-          Thomas Cornell
-        </div>
-
-        <div style={{ display: "flex", gap: "20px" }}>
-          <span>Home</span>
-          <Link href="/lab">Lab</Link>
-          <span>Projects</span>
-          <span>Resume</span>
-        </div>
-      </nav>
 
       {/* HERO SECTION */}
       <section style={{ padding: "60px 40px" }}>
