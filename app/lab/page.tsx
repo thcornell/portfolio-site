@@ -1,34 +1,38 @@
+import Link from "next/link";
+
 export default function Lab() {
   return (
     <main style={{ fontFamily: "Arial", padding: "40px" }}>
-      <h1>Active Directory Home Lab</h1>
+      <h1>Home Lab</h1>
 
       <p>
-        This lab simulates a small enterprise environment using Windows Server,
-        Active Directory Domain Services, and Windows 11 clients.
+        A structured environment for practicing infrastructure, identity,
+        virtualization, automation, and containerization.
       </p>
 
-      <h2>Environment Overview</h2>
-      <ul>
-        <li>Windows Server 2022 (Domain Controller)</li>
-        <li>Active Directory Domain Services (AD DS)</li>
-        <li>DNS Role installed on DC</li>
-        <li>Windows 11 Client VM</li>
-      </ul>
+      <hr style={{ margin: "20px 0" }} />
 
-      <h2>Key Concepts Practiced</h2>
-      <ul>
-        <li>User and Group Management</li>
-        <li>Domain Join Process</li>
-        <li>DNS Resolution in AD Environments</li>
-        <li>Basic Group Policy Concepts</li>
-      </ul>
+      <section style={{ display: "grid", gap: "20px" }}>
+        <Link href="/lab/active-directory" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+            <h2>🖥️ Active Directory Lab</h2>
+            <p>
+              Windows Server 2022 domain controller, DNS, users, groups,
+              GPO concepts, and Windows 11 domain join testing.
+            </p>
+          </div>
+        </Link>
 
-      <h2>Notes</h2>
-      <p>
-        This environment is used for hands-on learning of enterprise identity
-        and access management concepts.
-      </p>
+        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
+          <h2>🐳 Docker Lab</h2>
+          <p>Containerized services and self-hosted tools. Coming soon.</p>
+        </div>
+
+        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
+          <h2>📜 PowerShell Automation</h2>
+          <p>Scripts for IT administration and reporting. Coming soon.</p>
+        </div>
+      </section>
     </main>
   );
 }
