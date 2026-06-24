@@ -2,81 +2,79 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial", padding: "40px" }}>
-      <section style={{ marginBottom: "40px" }}>
-        <p style={{ color: "#666", marginBottom: "10px" }}>
-          IT Portfolio / Technical Knowledge Base
-        </p>
+    <main className="page">
+      <section>
+        <p className="eyebrow">IT Portfolio / Technical Knowledge Base</p>
 
-        <h1 style={{ fontSize: "48px", marginBottom: "10px" }}>
-          Thomas Cornell
-        </h1>
+        <h1 className="hero-title">Thomas Cornell</h1>
 
-        <p style={{ fontSize: "20px", color: "#444", maxWidth: "800px" }}>
+        <p className="hero-subtitle">
           IT Support Engineer focused on Identity & Access Management,
           Active Directory, Windows infrastructure, virtualization, Docker,
           and automation.
         </p>
       </section>
 
-      <section style={{ marginBottom: "40px" }}>
+      <section className="section">
         <h2>System Overview</h2>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "20px",
-            marginTop: "20px",
-          }}
-        >
-          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+        <div className="grid">
+          <div className="card">
+            <span className="status-pill">Active</span>
             <h3>Identity</h3>
-            <p>Active Directory, Okta, SailPoint, user lifecycle support.</p>
+            <p>Active Directory, Okta, SailPoint, and user lifecycle support.</p>
           </div>
 
-          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <div className="card">
+            <span className="status-pill">Active</span>
             <h3>Infrastructure</h3>
-            <p>Windows Server, Windows 11 clients, DNS, virtual machines.</p>
+            <p>Windows Server, Windows 11 clients, DNS, and virtual machines.</p>
           </div>
 
-          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <div className="card">
+            <span className="status-pill status-muted">Building</span>
             <h3>Automation</h3>
-            <p>PowerShell, repeatable workflows, documentation, scripts.</p>
+            <p>PowerShell, repeatable workflows, documentation, and scripts.</p>
           </div>
 
-          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+          <div className="card">
+            <span className="status-pill status-muted">Planned</span>
             <h3>Containers</h3>
-            <p>Docker, Docker Compose, self-hosted tools, monitoring.</p>
+            <p>Docker, Docker Compose, self-hosted tools, and monitoring.</p>
           </div>
         </div>
       </section>
 
-      <section style={{ marginBottom: "40px" }}>
+      <section className="section">
         <h2>Featured Work</h2>
 
-        <div style={{ border: "1px solid #ddd", padding: "20px", marginTop: "20px" }}>
+        <div className="card">
+          <span className="status-pill">In Progress</span>
           <h3>Active Directory Home Lab</h3>
+
           <p>
-            A Windows Server 2022 lab environment for practicing domain services,
-            DNS, user/group management, Group Policy concepts, and client domain joins.
+            A Windows Server 2022 lab environment for practicing domain
+            services, DNS, user/group management, Group Policy concepts, and
+            client domain joins.
           </p>
 
-          <Link href="/projects/active-directory">
+          <Link href="/projects/active-directory" className="link-accent">
             View project →
           </Link>
         </div>
       </section>
 
-      <section>
+      <section className="section">
         <h2>Current Build Status</h2>
 
-        <ul>
-          <li>Next.js portfolio deployed through GitHub and Vercel</li>
-          <li>Projects section created</li>
-          <li>Active Directory project documentation started</li>
-          <li>Resume section scaffolded</li>
-        </ul>
+        <div className="card">
+          <ul>
+            <li>Next.js portfolio deployed through GitHub and Vercel</li>
+            <li>Projects section created</li>
+            <li>Active Directory project documentation started</li>
+            <li>Resume section scaffolded</li>
+          </ul>
+        </div>
       </section>
     </main>
   );

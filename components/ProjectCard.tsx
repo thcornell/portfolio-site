@@ -13,26 +13,21 @@ export default function ProjectCard({
   href,
   status = "In Progress",
 }: ProjectCardProps) {
+  const isClickable = Boolean(href);
+
   const card = (
-    <div
-      style={{
-        border: "1px solid #ddd",
-        padding: "20px",
-        opacity: href ? 1 : 0.6,
-      }}
-    >
-      <p style={{ color: "#666", marginBottom: "8px" }}>{status}</p>
+    <div className={`card ${isClickable ? "" : "card-muted"}`}>
+      <span className={`status-pill ${isClickable ? "" : "status-muted"}`}>
+        {status}
+      </span>
+
       <h2>{title}</h2>
       <p>{description}</p>
     </div>
   );
 
   if (href) {
-    return (
-      <Link href={href} style={{ textDecoration: "none", color: "inherit" }}>
-        {card}
-      </Link>
-    );
+    return <Link href={href}>{card}</Link>;
   }
 
   return card;
