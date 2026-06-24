@@ -39,8 +39,6 @@ export default function Home() {
         <h2>Featured Project</h2>
 
         <div className="card">
-          <span className="status-pill">In Progress</span>
-
           <h3>Active Directory Home Lab</h3>
 
           <p>
@@ -59,8 +57,6 @@ export default function Home() {
         <h2>Latest Blog Post</h2>
 
         <div className="card">
-          <span className="status-pill">New</span>
-
           <h3>Building This Portfolio Site</h3>
 
           <p>
