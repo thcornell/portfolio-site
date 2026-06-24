@@ -3,34 +3,52 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <main style={{ fontFamily: "Arial", padding: "40px" }}>
-      <h1>Projects Dashboard</h1>
+      <h1>Projects</h1>
 
-      <p>
-        A collection of infrastructure, identity, and automation projects
-        built in my home lab and IT environment.
+      <p style={{ maxWidth: "750px", lineHeight: "1.6" }}>
+        Technical projects focused on infrastructure, identity, virtualization,
+        automation, and systems documentation.
       </p>
 
       <hr style={{ margin: "20px 0" }} />
 
       <section style={{ display: "grid", gap: "20px" }}>
-
-        <Link href="/lab" style={{ textDecoration: "none", color: "inherit" }}>
+        <Link
+          href="/projects/active-directory"
+          style={{ textDecoration: "none", color: "inherit" }}
+        >
           <div style={{ border: "1px solid #ddd", padding: "20px" }}>
-            <h2>🖥️ Active Directory Home Lab</h2>
-            <p>Windows Server 2022 domain with Windows 11 client integration.</p>
+            <h2>Active Directory Home Lab</h2>
+            <p>
+              Windows Server 2022 domain controller, DNS, users, groups,
+              Group Policy concepts, and Windows 11 domain join testing.
+            </p>
           </div>
         </Link>
 
         <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
-          <h2>🐳 Docker Environment</h2>
-          <p>Self-hosted services and containerized applications.</p>
+          <h2>Docker Environment</h2>
+          <p>
+            Containerized services, Docker Compose, and self-hosted tools.
+            Coming soon.
+          </p>
         </div>
 
         <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
-          <h2>📜 PowerShell Automation</h2>
-          <p>Scripts for system tasks and administrative automation.</p>
+          <h2>PowerShell Automation</h2>
+          <p>
+            Scripts for IT administration, reporting, and repeatable system tasks.
+            Coming soon.
+          </p>
         </div>
 
+        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
+          <h2>Networking Notes</h2>
+          <p>
+            DNS, DHCP, VPN, troubleshooting, and lab networking documentation.
+            Coming soon.
+          </p>
+        </div>
       </section>
     </main>
   );
