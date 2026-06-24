@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Projects() {
   return (
     <main style={{ fontFamily: "Arial", padding: "40px" }}>
@@ -10,20 +12,21 @@ export default function Projects() {
 
       <hr style={{ margin: "20px 0" }} />
 
-      {/* PROJECT CARDS */}
       <section style={{ display: "grid", gap: "20px" }}>
 
-        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
-          <h2>🖥️ Active Directory Home Lab</h2>
-          <p>Windows Server 2022 domain with Windows 11 client integration.</p>
-        </div>
+        <Link href="/lab" style={{ textDecoration: "none", color: "inherit" }}>
+          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+            <h2>🖥️ Active Directory Home Lab</h2>
+            <p>Windows Server 2022 domain with Windows 11 client integration.</p>
+          </div>
+        </Link>
 
-        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
           <h2>🐳 Docker Environment</h2>
           <p>Self-hosted services and containerized applications.</p>
         </div>
 
-        <div style={{ border: "1px solid #ddd", padding: "20px" }}>
+        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
           <h2>📜 PowerShell Automation</h2>
           <p>Scripts for system tasks and administrative automation.</p>
         </div>
