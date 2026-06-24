@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main style={{ fontFamily: "Arial" }}>
@@ -14,7 +15,7 @@ export default function Home() {
 
         <div style={{ display: "flex", gap: "20px" }}>
           <span>Home</span>
-          <span>Lab</span>
+          <Link href="/lab">Lab</Link>
           <span>Projects</span>
           <span>Resume</span>
         </div>
