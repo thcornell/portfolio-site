@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ProjectCard from "../../components/ProjectCard";
 
 export default function Projects() {
   return (
@@ -13,42 +13,30 @@ export default function Projects() {
       <hr style={{ margin: "20px 0" }} />
 
       <section style={{ display: "grid", gap: "20px" }}>
-        <Link
+        <ProjectCard
+          title="Active Directory Home Lab"
+          description="Windows Server 2022 domain controller, DNS, users, groups, Group Policy concepts, and Windows 11 domain join testing."
           href="/projects/active-directory"
-          style={{ textDecoration: "none", color: "inherit" }}
-        >
-          <div style={{ border: "1px solid #ddd", padding: "20px" }}>
-            <h2>Active Directory Home Lab</h2>
-            <p>
-              Windows Server 2022 domain controller, DNS, users, groups,
-              Group Policy concepts, and Windows 11 domain join testing.
-            </p>
-          </div>
-        </Link>
+          status="Active"
+        />
 
-        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
-          <h2>Docker Environment</h2>
-          <p>
-            Containerized services, Docker Compose, and self-hosted tools.
-            Coming soon.
-          </p>
-        </div>
+        <ProjectCard
+          title="Docker Environment"
+          description="Containerized services, Docker Compose, and self-hosted tools."
+          status="Coming Soon"
+        />
 
-        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
-          <h2>PowerShell Automation</h2>
-          <p>
-            Scripts for IT administration, reporting, and repeatable system tasks.
-            Coming soon.
-          </p>
-        </div>
+        <ProjectCard
+          title="PowerShell Automation"
+          description="Scripts for IT administration, reporting, and repeatable system tasks."
+          status="Coming Soon"
+        />
 
-        <div style={{ border: "1px solid #ddd", padding: "20px", opacity: 0.6 }}>
-          <h2>Networking Notes</h2>
-          <p>
-            DNS, DHCP, VPN, troubleshooting, and lab networking documentation.
-            Coming soon.
-          </p>
-        </div>
+        <ProjectCard
+          title="Networking Notes"
+          description="DNS, DHCP, VPN, troubleshooting, and lab networking documentation."
+          status="Coming Soon"
+        />
       </section>
     </main>
   );
