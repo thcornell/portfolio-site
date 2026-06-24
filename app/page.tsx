@@ -73,19 +73,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
-      <section className="section">
-        <h2>Currently Building</h2>
-
-        <div className="card">
-          <ul>
-            <li>Active Directory documentation</li>
-            <li>Docker environment planning</li>
-            <li>PowerShell automation examples</li>
-            <li>Networking and troubleshooting notes</li>
-          </ul>
-        </div>
-      </section>
     </main>
   );
 }
