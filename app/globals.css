@@ -497,3 +497,19 @@ hr {
     grid-template-columns: 1fr;
   }
 }
+
+.prose pre {
+  overflow-x: auto;
+  padding: 18px;
+  border-radius: 14px;
+  background: #020617;
+  border: 1px solid #1f2937;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.prose code {
+  color: #e5e7eb;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+}

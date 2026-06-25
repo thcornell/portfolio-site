@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { blogPosts } from "../data/blogPosts";
 
 export default function Home() {
+  const latestPost = blogPosts[0];
+
   return (
     <main className="home-page">
       <section className="home-hero">
@@ -37,30 +40,31 @@ export default function Home() {
         </div>
 
         <aside className="home-summary-card">
-  <p className="summary-label">At a Glance</p>
+          <p className="summary-label">At a Glance</p>
 
-  <div className="summary-item">
-    <span>Current Role</span>
-    <strong>Service Desk Analyst II</strong>
-  </div>
+          <div className="summary-item">
+            <span>Current Role</span>
+            <strong>Service Desk Analyst II</strong>
+          </div>
 
-  <div className="summary-item">
-    <span>Environment</span>
-    <strong>Enterprise healthcare IT</strong>
-  </div>
+          <div className="summary-item">
+            <span>Environment</span>
+            <strong>Enterprise healthcare IT</strong>
+          </div>
 
-  <div className="summary-item">
-    <span>Core Work</span>
-    <strong>
-      User support, access issues, endpoint troubleshooting, documentation
-    </strong>
-  </div>
+          <div className="summary-item">
+            <span>Core Work</span>
+            <strong>
+              User support, access issues, endpoint troubleshooting,
+              documentation
+            </strong>
+          </div>
 
-  <div className="summary-item">
-    <span>This Site</span>
-    <strong>Projects, technical notes, and resume</strong>
-  </div>
-</aside>
+          <div className="summary-item">
+            <span>This Site</span>
+            <strong>Projects, technical notes, and resume</strong>
+          </div>
+        </aside>
       </section>
 
       <section className="home-section">
@@ -72,23 +76,25 @@ export default function Home() {
         <div className="feature-grid">
           <Link href="/projects/active-directory" className="feature-card">
             <p className="feature-type">Project</p>
+
             <h3>Active Directory Home Lab</h3>
+
             <p>
               A Windows Server 2022 lab for practicing domain services, DNS,
               user and group management, Group Policy concepts, and Windows
               client administration.
             </p>
+
             <span>View project →</span>
           </Link>
 
-          <Link href="/blog/building-this-site" className="feature-card">
-            <p className="feature-type">Blog</p>
-            <h3>Building This Portfolio Site</h3>
-            <p>
-              Notes from creating this site with Next.js, VS Code, GitHub,
-              Vercel, reusable components, routing, and a simple development
-              workflow.
-            </p>
+          <Link href={latestPost.href} className="feature-card">
+            <p className="feature-type">Latest Blog Post</p>
+
+            <h3>{latestPost.title}</h3>
+
+            <p>{latestPost.description}</p>
+
             <span>Read post →</span>
           </Link>
         </div>
@@ -104,7 +110,7 @@ export default function Home() {
           <p>
             I built this site to go beyond a traditional resume. The goal is to
             document what I’m learning, show how I approach technical problems,
-            and create a place to showcase practical examples of my
+            and create a place where employers can see practical examples of my
             work over time.
           </p>
         </div>
