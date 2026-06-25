@@ -37,28 +37,30 @@ export default function Home() {
         </div>
 
         <aside className="home-summary-card">
-          <p className="summary-label">Portfolio Focus</p>
+  <p className="summary-label">At a Glance</p>
 
-          <div className="summary-item">
-            <span>Current path</span>
-            <strong>Enterprise IT Support</strong>
-          </div>
+  <div className="summary-item">
+    <span>Current Role</span>
+    <strong>Service Desk Analyst II</strong>
+  </div>
 
-          <div className="summary-item">
-            <span>Building toward</span>
-            <strong>Infrastructure / Systems Roles</strong>
-          </div>
+  <div className="summary-item">
+    <span>Environment</span>
+    <strong>Enterprise healthcare IT</strong>
+  </div>
 
-          <div className="summary-item">
-            <span>Proof of work</span>
-            <strong>Projects + Documentation</strong>
-          </div>
+  <div className="summary-item">
+    <span>Core Work</span>
+    <strong>
+      User support, access issues, endpoint troubleshooting, documentation
+    </strong>
+  </div>
 
-          <div className="summary-item">
-            <span>Core strengths</span>
-            <strong>Troubleshooting, systems thinking, user support</strong>
-          </div>
-        </aside>
+  <div className="summary-item">
+    <span>This Site</span>
+    <strong>Projects, technical notes, and resume</strong>
+  </div>
+</aside>
       </section>
 
       <section className="home-section">
