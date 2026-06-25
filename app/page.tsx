@@ -2,71 +2,109 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="page">
-      <section>
-        <p className="eyebrow">IT Portfolio / Technical Knowledge Base</p>
+    <main className="home-page">
+      <section className="home-hero">
+        <div className="home-hero-copy">
+          <p className="home-kicker">IT Portfolio / Technical Documentation</p>
 
-        <h1 className="hero-title">Thomas Cornell</h1>
+          <h1>Thomas Cornell</h1>
 
-        <p className="hero-subtitle">
-          I’m an IT professional with enterprise support experience, building a
-          hands-on portfolio around infrastructure, systems administration,
-          automation, and technical documentation.
-        </p>
+          <p className="home-lead">
+            IT professional with enterprise support experience, building a
+            practical portfolio around infrastructure, systems administration,
+            automation, troubleshooting, and technical documentation.
+          </p>
 
-        <p className="hero-subtitle">
-          This site documents the systems I’m learning, building, and
-          troubleshooting — from Active Directory and virtual machines to Docker,
-          scripting, networking, and future cloud projects.
-        </p>
+          <p className="home-supporting">
+            This site highlights hands-on projects, written technical notes, and
+            professional experience across Windows infrastructure, Active
+            Directory, virtualization, Docker, scripting, and related IT systems.
+          </p>
 
-        <div className="button-row">
-          <Link href="/projects" className="button">
-            View Projects
+          <div className="home-actions">
+            <Link href="/projects" className="primary-action">
+              View Projects
+            </Link>
+
+            <Link href="/resume" className="secondary-action">
+              View Resume
+            </Link>
+
+            <Link href="/blog" className="secondary-action">
+              Read Blog
+            </Link>
+          </div>
+        </div>
+
+        <aside className="home-summary-card">
+          <p className="summary-label">Portfolio Focus</p>
+
+          <div className="summary-item">
+            <span>Current path</span>
+            <strong>Enterprise IT Support</strong>
+          </div>
+
+          <div className="summary-item">
+            <span>Building toward</span>
+            <strong>Infrastructure / Systems Roles</strong>
+          </div>
+
+          <div className="summary-item">
+            <span>Proof of work</span>
+            <strong>Projects + Documentation</strong>
+          </div>
+
+          <div className="summary-item">
+            <span>Core strengths</span>
+            <strong>Troubleshooting, systems thinking, user support</strong>
+          </div>
+        </aside>
+      </section>
+
+      <section className="home-section">
+        <div className="section-heading">
+          <p className="home-kicker">Start Here</p>
+          <h2>Featured Work</h2>
+        </div>
+
+        <div className="feature-grid">
+          <Link href="/projects/active-directory" className="feature-card">
+            <p className="feature-type">Project</p>
+            <h3>Active Directory Home Lab</h3>
+            <p>
+              A Windows Server 2022 lab for practicing domain services, DNS,
+              user and group management, Group Policy concepts, and Windows
+              client administration.
+            </p>
+            <span>View project →</span>
           </Link>
 
-          <Link href="/resume" className="button-secondary">
-            View Resume
-          </Link>
-
-          <Link href="/blog" className="button-secondary">
-            Read Blog
+          <Link href="/blog/building-this-site" className="feature-card">
+            <p className="feature-type">Blog</p>
+            <h3>Building This Portfolio Site</h3>
+            <p>
+              Notes from creating this site with Next.js, VS Code, GitHub,
+              Vercel, reusable components, routing, and a simple development
+              workflow.
+            </p>
+            <span>Read post →</span>
           </Link>
         </div>
       </section>
 
-      <section className="section">
-        <h2>Featured Project</h2>
-
-        <div className="card">
-          <h3>Active Directory Home Lab</h3>
-
-          <p>
-            A Windows Server 2022 lab used to practice domain services, DNS,
-            user and group management, Group Policy concepts, and Windows client
-            administration.
-          </p>
-
-          <Link href="/projects/active-directory" className="link-accent">
-            View project →
-          </Link>
+      <section className="home-section">
+        <div className="section-heading">
+          <p className="home-kicker">Why This Site Exists</p>
+          <h2>A living technical portfolio</h2>
         </div>
-      </section>
 
-      <section className="section">
-        <h2>Latest Blog Post</h2>
-
-        <div className="card">
-          <h3>Building This Portfolio Site</h3>
-
+        <div className="plain-card">
           <p>
-            Notes from creating this site with Next.js, GitHub, Vercel, and a
-            simple development workflow.
+            I built this site to go beyond a traditional resume. The goal is to
+            document what I’m learning, show how I approach technical problems,
+            and create a place to showcase practical examples of my
+            work over time.
           </p>
-
-          <Link href="/blog/building-this-site" className="link-accent">
-            Read post →
-          </Link>
         </div>
       </section>
     </main>
