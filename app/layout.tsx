@@ -30,6 +30,25 @@ export default function RootLayout({
         </nav>
 
         {children}
+
+        <footer className="site-footer">
+          <div className="footer-inner">
+            <div>
+              <p className="footer-title">Thomas Cornell</p>
+              <p className="footer-subtitle">
+                IT Portfolio / Technical Knowledge Base
+              </p>
+            </div>
+
+            <div className="footer-links">
+              <Link href="/projects">Projects</Link>
+              <Link href="/blog">Blog</Link>
+              <Link href="/resume">Resume</Link>
+              <a href="mailto:thcornell@gmail.com">Email</a>
+              <a href="https://www.linkedin.com/in/thcornell">LinkedIn</a>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   );

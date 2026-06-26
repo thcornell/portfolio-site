@@ -89,7 +89,9 @@ export default function Home() {
           </Link>
 
           <Link href={latestPost.href} className="feature-card">
-            <p className="feature-type">Latest Blog Post</p>
+            <p className="feature-type">
+              {latestPost.category} · {latestPost.date}
+            </p>
 
             <h3>{latestPost.title}</h3>
 

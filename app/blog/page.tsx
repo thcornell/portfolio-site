@@ -18,7 +18,9 @@ export default function Blog() {
           {blogPosts.map((post) => (
             <Link href={post.href} key={post.href}>
               <div className="card">
-                <p className="feature-type">{post.category}</p>
+                <p className="feature-type">
+                  {post.category} · {post.date}
+                </p>
 
                 <h2>{post.title}</h2>
 
