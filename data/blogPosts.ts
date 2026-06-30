@@ -7,6 +7,14 @@ export type BlogPost = {
 };
 
 export const blogPosts: BlogPost[] = [
+    {
+      title: "Behind the Curtain: Building My First Active Directory Home Lab",
+      description:
+        "How building an Active Directory home lab helped me better understand AD DS, DNS, Group Policy, and the systems I work with in enterprise IT support.",
+      href: "/blog/active-directory-home-lab",
+      date: "2026-06-30",
+      category: "Active Directory",
+  },
   {
     title: "From Portfolio Website to Technical Knowledge Base",
     description:
