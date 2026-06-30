@@ -22,15 +22,16 @@ export default function Projects() {
           />
 
           <ProjectCard
-            title="Docker Environment"
-            description="Containerized services, Docker Compose, and self-hosted tools."
-            tags={["Docker", "Containers", "Self-hosting"]}
+            title="PowerShell Automation Toolkit"
+            description="A growing collection of PowerShell scripts for practicing IT administration, reporting, file management, and future Active Directory automation."
+            href="/projects/powershell-automation"
+            tags={["PowerShell", "Automation", "Reporting"]}
           />
 
           <ProjectCard
-            title="PowerShell Automation"
-            description="Scripts for IT administration, reporting, and repeatable system tasks."
-            tags={["PowerShell", "Automation", "Admin Tasks"]}
+            title="Docker Environment"
+            description="Containerized services, Docker Compose, and self-hosted tools."
+            tags={["Docker", "Containers", "Self-hosting"]}
           />
 
           <ProjectCard
