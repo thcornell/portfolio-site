@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "../data/blogPosts";
 
@@ -10,7 +11,7 @@ export default function Home() {
         <div className="home-hero-copy">
           <p className="home-kicker">IT Portfolio / Technical Documentation</p>
 
-          <h1>Thomas Cornell</h1>
+          <h1 className="home-name">Thomas Cornell</h1>
 
           <p className="home-lead">
             IT professional with enterprise support experience, building a
@@ -39,32 +40,45 @@ export default function Home() {
           </div>
         </div>
 
-        <aside className="home-summary-card">
-          <p className="summary-label">At a Glance</p>
-
-          <div className="summary-item">
-            <span>Current Role</span>
-            <strong>Service Desk Analyst II</strong>
+        <div className="home-hero-side">
+          <div className="home-photo-card">
+            <Image
+              src="/images/home/thomas-home-portrait.png"
+              alt="Thomas Cornell"
+              width={900}
+              height={1100}
+              priority
+              className="home-photo"
+            />
           </div>
 
-          <div className="summary-item">
-            <span>Environment</span>
-            <strong>Enterprise healthcare IT</strong>
-          </div>
+          <aside className="home-summary-card">
+            <p className="summary-label">At a Glance</p>
 
-          <div className="summary-item">
-            <span>Core Work</span>
-            <strong>
-              User support, access issues, endpoint troubleshooting,
-              documentation
-            </strong>
-          </div>
+            <div className="summary-item">
+              <span>Current Role</span>
+              <strong>Service Desk Analyst II</strong>
+            </div>
 
-          <div className="summary-item">
-            <span>This Site</span>
-            <strong>Projects, technical notes, and resume</strong>
-          </div>
-        </aside>
+            <div className="summary-item">
+              <span>Environment</span>
+              <strong>Enterprise healthcare IT</strong>
+            </div>
+
+            <div className="summary-item">
+              <span>Core Work</span>
+              <strong>
+                User support, access issues, endpoint troubleshooting,
+                documentation
+              </strong>
+            </div>
+
+            <div className="summary-item">
+              <span>This Site</span>
+              <strong>Projects, technical notes, and resume</strong>
+            </div>
+          </aside>
+        </div>
       </section>
 
       <section className="home-section">
