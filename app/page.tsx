@@ -13,81 +13,73 @@ export default function Home() {
 
           <h1 className="home-name">Thomas Cornell</h1>
 
-          <div className="home-hero-row">
-            <div className="home-hero-intro">
-              <p className="home-lead">
-                IT professional with enterprise support experience, building a
-                practical portfolio around infrastructure, systems administration,
-                automation, troubleshooting, and technical documentation.
-              </p>
+          <p className="home-lead">
+            IT professional with enterprise support experience, building a
+            practical portfolio around infrastructure, systems administration,
+            automation, troubleshooting, and technical documentation.
+          </p>
 
-              <p className="home-supporting">
-                This site highlights hands-on projects, written technical notes,
-                and professional experience across Windows infrastructure,
-                Active Directory, virtualization, Docker, scripting, and related
-                IT systems.
-              </p>
+          <p className="home-supporting">
+            This site highlights hands-on projects, written technical notes, and
+            professional experience across Windows infrastructure, Active
+            Directory, virtualization, Docker, scripting, and related IT systems.
+          </p>
 
-              <div className="home-actions">
-                <Link href="/projects" className="primary-action">
-                  View Projects
-                </Link>
+          <div className="home-actions">
+            <Link href="/projects" className="primary-action">
+              View Projects
+            </Link>
 
-                <Link href="/resume" className="secondary-action">
-                  View Resume
-                </Link>
+            <Link href="/resume" className="secondary-action">
+              View Resume
+            </Link>
 
-                <Link href="/blog" className="secondary-action">
-                  Read Blog
-                </Link>
-              </div>
-            </div>
-
-            <div className="home-photo-card">
-              <Image
-                src="/images/home/thomas-home-portrait.png"
-                alt="Thomas Cornell"
-                width={900}
-                height={1100}
-                priority
-                className="home-photo"
-              />
-            </div>
-
-            <aside className="home-summary-card">
-              <p className="summary-label">At a Glance</p>
-
-              <div className="summary-item">
-                <span>Current Role</span>
-                <strong>Service Desk Analyst II</strong>
-              </div>
-
-              <div className="summary-item">
-                <span>Environment</span>
-                <strong>Enterprise healthcare IT</strong>
-              </div>
-
-              <div className="summary-item">
-                <span>Core Work</span>
-                <strong>
-                  User support, access issues, endpoint troubleshooting,
-                  documentation
-                </strong>
-              </div>
-
-              <div className="summary-item">
-                <span>This Site</span>
-                <strong>Projects, technical notes, and resume</strong>
-              </div>
-            </aside>
+            <Link href="/blog" className="secondary-action">
+              Read Blog
+            </Link>
           </div>
+        </div>
+
+        <div className="home-photo-card">
+          <Image
+            src="/images/home/thomas-home-headshot.jpeg"
+            alt="Thomas Cornell"
+            width={992}
+            height={1246}
+            priority
+            className="home-photo"
+          />
+        </div>
+      </section>
+
+      <section className="home-glance-row">
+        <div className="summary-item">
+          <span>Current Role</span>
+          <strong>Service Desk Analyst II</strong>
+        </div>
+
+        <div className="summary-item">
+          <span>Environment</span>
+          <strong>Enterprise healthcare IT</strong>
+        </div>
+
+        <div className="summary-item">
+          <span>Core Work</span>
+          <strong>
+            User support, access issues, endpoint troubleshooting, documentation
+          </strong>
+        </div>
+
+        <div className="summary-item">
+          <span>This Site</span>
+          <strong>Projects, technical notes, and resume</strong>
         </div>
       </section>
 
       <section className="home-section">
         <div className="section-heading">
-          <p className="home-kicker">Start Here</p>
-          <h2>Featured Work</h2>
+          <p className="home-kicker">Featured Work</p>
+          <h2>Projects and writing</h2>
         </div>
 
         <div className="feature-grid">
