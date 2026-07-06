@@ -14,15 +14,17 @@ export default function Home() {
           <h1 className="home-name">Thomas Cornell</h1>
 
           <p className="home-lead">
-            IT professional with enterprise support experience, building a
-            practical portfolio around infrastructure, systems administration,
-            automation, troubleshooting, and technical documentation.
+            Service Desk Analyst II in enterprise healthcare IT, supporting
+            users, troubleshooting access and endpoint issues, and documenting
+            technical processes. This portfolio highlights the infrastructure,
+            automation, and systems administration skills I’m building through
+            hands-on projects and technical writing.
           </p>
 
           <p className="home-supporting">
-            This site highlights hands-on projects, written technical notes, and
-            professional experience across Windows infrastructure, Active
-            Directory, virtualization, Docker, scripting, and related IT systems.
+            My current focus areas include Windows infrastructure, Active
+            Directory, virtualization, PowerShell automation, Docker, networking
+            fundamentals, and practical IT documentation.
           </p>
 
           <div className="home-actions">
@@ -49,30 +51,6 @@ export default function Home() {
             priority
             className="home-photo"
           />
-        </div>
-      </section>
-
-      <section className="home-glance-row">
-        <div className="summary-item">
-          <span>Current Role</span>
-          <strong>Service Desk Analyst II</strong>
-        </div>
-
-        <div className="summary-item">
-          <span>Environment</span>
-          <strong>Enterprise healthcare IT</strong>
-        </div>
-
-        <div className="summary-item">
-          <span>Core Work</span>
-          <strong>
-            User support, access issues, endpoint troubleshooting, documentation
-          </strong>
-        </div>
-
-        <div className="summary-item">
-          <span>This Site</span>
-          <strong>Projects, technical notes, and resume</strong>
         </div>
       </section>
 
